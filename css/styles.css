@@ -41,6 +41,7 @@ body {
 } */
 
 /* ______heder______ */
+
 .heder {
   align-items: center;
 }
@@ -162,31 +163,35 @@ body {
   margin: 0 auto 48px;
 }
 
-.button-hero {
+.btn {
   cursor: pointer;
-  background-color: var(--accent-color);
-  color: var(--basik-light-color);
   border: none;
   border-radius: 4px;
-  padding: 16px 32px;
-  display: inline-block;
 
   font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.12;
   letter-spacing: 0.04em;
+  color: var(--basik-light-color);
+  background-color: var(--accent-color);
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--anim-function);
 }
 
-.button-hero:hover,
-.button-hero:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--accent-hover);
 }
 
-.button-hero:active {
+.btn:active {
   background-color: var(--accent-hover);
+}
+
+.button-hero {
+  padding: 16px 32px;
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 1.12;
 }
 
 .overlay {
@@ -232,7 +237,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  padding: 24px;
+  padding-top: 72px;
   width: 408px;
   min-height: 576px;
 
@@ -267,6 +273,108 @@ body {
 .modal-btn:focus {
   background: var(--accent-hover);
   fill: var(--basik-light-color);
+}
+
+/* ______backdrob-form_____ */
+
+.form-tittle {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--dark-bg-color);
+}
+
+.form-label {
+  display: block;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.form-name {
+  display: block;
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.form-input {
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  font-size: 18px;
+  padding: 8px 8px 8px 38px;
+
+  transition: outline var(--anim-function);
+}
+
+.form-input:focus + .icon-form {
+  fill: var(--accent-color);
+}
+
+.form-input:focus,
+textarea:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  outline: 1px solid red;
+}
+
+.form-input:not(:placeholder-shown):required:valid {
+  outline: 1px solid var(--accent-color);
+}
+
+.icon-form {
+  position: absolute;
+  left: 16px;
+  bottom: 8px;
+  transition: fill var(--anim-function);
+}
+
+textarea {
+  width: 100%;
+  padding: 8px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.form-massage::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-check {
+  display: block;
+  margin-top: 16px;
+}
+
+.hero-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  padding: 16px 32px;
+  width: 169px;
 }
 
 /* ____advantages_____ */
@@ -453,7 +561,6 @@ body {
 .team-soc-link:focus {
   background-color: var(--accent-hover);
 }
-
 /* _____Customers_____ */
 
 .сustomers-title {
@@ -634,6 +741,7 @@ body {
   /* padding-left: 0; */
   display: flex;
 }
+
 .holder {
   display: flex;
 }
@@ -701,10 +809,6 @@ body {
   background-color: var(--success);
 }
 
-.footer-form {
-}
-.form-text {
-}
 .subscribe-form {
   margin-top: 16px;
   display: flex;
@@ -742,41 +846,18 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.footer-input:active {
-}
-
 .footer-form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  border: none;
-
-  border-radius: 4px;
   padding: 8px 24px;
 
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  color: var(--basik-light-color);
-  background-color: var(--accent-color);
-
-  transition: background-color var(--anim-function);
 }
 
 .icon-telegram {
   margin-left: 16px;
   fill: var(--basik-light-color);
-}
-
-.footer-form-btn:hover,
-.footer-form-btn:focus {
-  background-color: var(--accent-hover);
-}
-
-.footer-form-btn:active {
-  background-color: var(--accent-hover);
 }

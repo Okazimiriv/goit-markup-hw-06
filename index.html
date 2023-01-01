@@ -53,7 +53,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-hero" data-modal-open>Order Service</button>
+          <button type="button" class="button-hero btn" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -326,6 +326,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <section class="holder container">
         <div class="footer-logo">
@@ -374,7 +375,7 @@
           <p class="form-text">Subscribe</p>
           <form class="subscribe-form" name="subscribe_form" autocomplete="on">
             <input type="email" name="user_mail" class="footer-input" placeholder="E-mail" />
-            <button type="submit" class="footer-form-btn">
+            <button type="submit" class="footer-form-btn btn">
               Subscribe
               <svg class="icon-telegram" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
@@ -384,6 +385,7 @@
         </div>
       </section>
     </footer>
+
     <div class="backdrob is-hidden" data-modal>
       <div class="hero-modal">
         <button class="modal-btn" data-modal-close>
@@ -391,6 +393,75 @@
             <use href="./images/icons.svg#icon-off"></use>
           </svg>
         </button>
+        <form class="registration-form" name="registration_form">
+          <strong class="form-tittle">Leave your contacts and we will call you back</strong>
+          <div class="backdrob-form-group" role="group">
+            <label class="form-label">
+              <span class="form-name">Name</span>
+              <input
+                class="form-input"
+                type="text"
+                name="user_name"
+                autocomplete="on"
+                required
+                minlength="3"
+                placeholder="&nbsp;"
+              />
+              <svg class="icon-form" width="24" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+
+            <label class="form-label">
+              <span class="form-name">Phone</span>
+              <input
+                class="form-input"
+                type="number"
+                name="user_phone"
+                autocomplete="on"
+                required
+                placeholder="&nbsp;"
+              />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+
+            <label class="form-label">
+              <span class="form-name">Email</span>
+              <input
+                class="form-input"
+                type="email"
+                name="user_email"
+                autocomplete="on"
+                placeholder="&nbsp;"
+                required
+              />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+
+            <label class="form-comment">
+              <span class="form-name">Comment</span>
+              <textarea
+                class="form-massage"
+                name="user_comment"
+                rows="8"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+
+            <label class="form-check">
+              <input type="checkbox" name="check" value="privacy_policy" />
+              <svg class="icon-checkbox" width="8" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              I accept the terms and conditions of the <a class="" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="hero-form-btn btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
