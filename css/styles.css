@@ -221,7 +221,7 @@ body {
   transition: visibility var(--anim-function), opacity var(--anim-function);
 }
 
-.backdrob.is-hidden {
+/* .backdrob.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -230,7 +230,7 @@ body {
 .backdrob.is-hidden .hero-modal {
   opacity: 0;
   transform: rotate(20deg);
-}
+} */
 
 .hero-modal {
   position: absolute;
@@ -346,6 +346,7 @@ textarea:focus {
 textarea {
   width: 100%;
   padding: 8px 16px;
+  resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -369,10 +370,10 @@ textarea {
 }
 
 .hero-form-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 32px;
   width: 169px;
 }
