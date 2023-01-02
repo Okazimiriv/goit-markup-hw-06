@@ -221,7 +221,7 @@ body {
   transition: visibility var(--anim-function), opacity var(--anim-function);
 }
 
-/* .backdrob.is-hidden {
+.backdrob.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -230,7 +230,7 @@ body {
 .backdrob.is-hidden .hero-modal {
   opacity: 0;
   transform: rotate(20deg);
-} */
+}
 
 .hero-modal {
   position: absolute;
@@ -343,6 +343,11 @@ textarea:focus {
   transition: fill var(--anim-function);
 }
 
+.icon-person {
+  padding-right: 4px;
+  padding-left: 0;
+}
+
 textarea {
   width: 100%;
   padding: 8px 16px;
@@ -365,8 +370,45 @@ textarea {
 }
 
 .form-check {
-  display: block;
   margin-top: 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: #757575;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+  gap: 5px;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.click {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  border: 1.25px solid var(--dark-bg-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .click {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  background-image: url(../images/click.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.click-link {
+  color: var(--accent-color);
 }
 
 .hero-form-btn {
